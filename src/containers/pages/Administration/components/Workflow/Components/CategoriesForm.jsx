@@ -1,0 +1,92 @@
+import React, { useEffect, useState } from 'react';
+import * as Yup from 'yup';
+import { Formik, Form } from 'formik';
+import { Row, Col } from 'antd';
+import SPButton from '../../../../../../components/SPButton';
+import 'antd/dist/antd.css';
+import { isArray, isEmpty } from 'lodash';
+import InputBox from '../../../../../../components/InputBox';
+
+function CategoriesFormDrawer({ recordValue, submit, closeDrawer, isVisible, isCreated }) {
+
+
+  const initialValues = {
+    tca_name: recordValue?.tca_name || ""
+  }
+  let validationSchemaStandard = Yup.object({
+    tca_name: Yup.string().required('This Field is Required')
+  });
+  return (
+    <div>
+      <Formik
+        id="formik"
+        validationSchema={validationSchemaStandard}
+        initialValues={initialValues}
+        enableReinitialize
+        onSubmit={(values, { resetForm }) => {
+          submit(values);
+          resetForm();
+        }}
+      >
+        {({
+          values,
+          errors,
+          touched,
+          handleChange,
+          handleBlur,
+          handleSubmit,
+          isSubmitting,
+          resetForm,
+          setFieldValue,
+        }) => {
+          useEffect(() => {
+            resetForm()
+          }, [isVisible])
+          return (
+            (
+              <Form>
+                <InputBox
+                  id={'tca_name'}
+                  label={'Name'}
+                  name={'tca_name'}
+                  placeholder={'Name'}
+                  onInputChange={handleChange}
+                  onBlur={handleBlur}
+                  errorMessage={errors.tca_name}
+                  value={values.tca_name}
+                  touched={touched.tca_name}
+                  width={345}
+                  noBorderValidation
+                />
+                <Row gutter={11} justify="end" style={{ width: 640 }}>
+                  <Col>
+                    <SPButton
+                      title="Cancel"
+                      size="small"
+                      type="secondary"
+                      onButtonClick={() => {
+                        resetForm();
+                        closeDrawer();
+                      }}
+                    />
+                  </Col>
+                  <Col>
+                    <SPButton
+                      title={isCreated ? "Save" : "Update"}
+                      size="small"
+                      type="submit"
+                      onButtonClick={handleSubmit}
+                      isLoading={false}
+                    />
+                  </Col>
+                </Row>
+              </Form>
+            )
+          )
+        }}
+      </Formik>
+    </div>
+  );
+}
+
+export default CategoriesFormDrawer;

@@ -1,0 +1,12 @@
+.ant-select-item-option-state {
+  display: none;
+}
+
+.rc-virtual-list-holder {
+  max-height: 310px !important;
+  overflow-y: unset !important;
+}
+.rc-virtual-list-holder-inner {
+  transform: none !important;
+  overflow-y: scroll !important;
+}

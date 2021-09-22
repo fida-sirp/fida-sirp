@@ -1,0 +1,9 @@
+.ant-tree .ant-tree-node-content-wrapper:hover,
+.ant-tree .ant-tree-node-content-wrapper.ant-tree-node-selected {
+  background-color: transparent !important;
+}
+
+
+.div.jsoneditor-tree{
+  height: 400px !important;
+}

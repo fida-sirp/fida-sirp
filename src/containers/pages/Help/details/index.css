@@ -1,0 +1,43 @@
+.help-title-name{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 22px;
+    color: #FAFAFB;
+}
+
+.help-desc-name{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 22px;
+    color: #FAFAFB;
+    padding-top:22px ;
+    padding-bottom: 22px;
+}
+
+.help-order-list{
+    margin-left: 15px;
+    margin-bottom: 39px;
+}
+
+.help-order-list li{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 22px;
+    color: #FAFAFB;
+}
+
+.video-block{
+    width: 695px;
+    height: 390px;
+
+}
+
+.border-line{
+    border: 1px solid #525268;
+    margin-top:67px;
+    margin-bottom:67px;
+    width: 80%;
+}

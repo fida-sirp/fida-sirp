@@ -1,0 +1,134 @@
+.main-container {
+  margin-top: 25px;
+}
+
+.json-editor-model .ant-modal-content .ant-modal-header {
+  background-color: #373747;
+  border-radius: 10px 10px 0px 0px;
+  border: none;
+  padding: 0px 55px;
+  height: 65px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.json-editor-model .ant-modal-content .ant-modal-body {
+  background-color: #2C2C38;
+  border: none;
+  padding: 45px 55px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.json-editor-model .ant-modal-content .ant-modal-header .ant-modal-title {
+  color: #fff;
+}
+
+.json-editor-model .ant-modal-close{
+  top: 23px !important;
+}
+
+.json-editor-model .ant-modal-content .anticon {
+  color: #fff;
+}
+
+.filter-output {
+  border-bottom: 1px solid #FFF;
+  font-size: 15px;
+  color: #ffffff;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 22px;
+  letter-spacing: 0px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.filter-output-result{
+  font-size: 15px;
+  color: #ffffff;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 22px;
+  letter-spacing: 0px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.filter-output-error{
+  font-size: 15px;
+  color: red;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 22px;
+  letter-spacing: 0px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.jsoneditor {
+  color: #1a1a1a !important;
+  border: thin solid #33C758  !important;
+  box-sizing: border-box !important;
+  width: 100% !important;
+  height: 100% !important;
+  position: relative !important;
+  padding: 0 !important;
+  line-height: 100% !important;
+}
+
+.jsoneditor-tree-inner{
+  height: 400px !important;
+}
+
+.jsoneditor-navigation-bar {
+  width: 100% !important;
+  height: 26px !important;
+  line-height: 26px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border-bottom: 1px solid #d3d3d3 !important;
+  box-sizing: border-box !important;
+  color: grey !important;
+  background-color: #ebebeb !important;
+  overflow: hidden !important;
+  font-family: arial,sans-serif !important;
+  font-size: 10pt !important;
+}
+
+.jsoneditor-menu {
+  width: 100% !important;
+  height: 35px !important;
+  padding: 2px !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  color: #fff !important;
+  background-color:  #33C758  !important;
+  border-bottom: 1px solid  #33C758 !important;
+}
+
+.jsoneditor-search {
+  font-family: arial,sans-serif !important;
+  position: absolute !important;
+  right: 4px !important;
+  top: 4px !important;
+  border-collapse: collapse !important;
+  border-spacing: 0 !important;
+  display: flex !important;
+}
+
+.jsoneditor-results {
+  font-family: arial,sans-serif !important;
+  color: #fff !important;
+  padding-right: 5px !important;
+  line-height: 26px !important;
+}
+
+.jsoneditor-frame {
+  border: 1px solid transparent !important;
+  background-color: #fff !important;
+  padding: 0 2px !important;
+  margin: 0 !important;
+}
